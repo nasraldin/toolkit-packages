@@ -1,0 +1,50 @@
+{
+  "compilerOptions": {
+    // ✨ Language and Module Support
+    "target": "ES2024",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "allowJs": true,
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "downlevelIteration": true,
+
+    // 📁 Project Structure and Build
+    "baseUrl": ".",
+    "rootDir": ".",
+    "composite": true,
+    "declaration": true,
+    "declarationMap": true,
+    "incremental": true,
+    "importHelpers": true,
+
+    // 🚨 Code Quality and Strictness
+    "strict": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+
+    // 🔁 Module Interop
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+
+    // 🧭 Paths and Aliases
+    // "paths": {},
+
+    // ✂️ Output Control (should be in app/package configs if needed)
+    "noEmit": true,
+    "newLine": "lf",
+    "inlineSources": false
+  },
+
+  // 📦 Include/Exclude: minimal and correct
+  "include": ["**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
+}

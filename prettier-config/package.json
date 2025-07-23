@@ -1,0 +1,61 @@
+{
+  "name": "@ajrly/prettier-config",
+  "version": "1.0.0",
+  "description": "Professional Prettier configuration for modern JavaScript/TypeScript projects with import sorting and Tailwind CSS support",
+  "keywords": [
+    "prettier",
+    "prettier-config",
+    "prettier-plugin",
+    "typescript",
+    "javascript",
+    "express",
+    "fastify",
+    "nestjs",
+    "react",
+    "nextjs",
+    "tailwindcss",
+    "import-sorting"
+  ],
+  "author": "Nasr Aldin <ns@nasraldin.com> (https://nasraldin.com)",
+  "license": "MIT",
+  "main": "index.mjs",
+  "types": "index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./index.mjs",
+      "require": "./index.cjs",
+      "types": "./index.d.ts"
+    }
+  },
+  "files": [
+    "index.mjs",
+    "index.cjs",
+    "index.d.ts",
+    "README.md"
+  ],
+  "packageManager": "pnpm@10.13.1",
+  "scripts": {
+    "test": "node prettier-test.js",
+    "test:format": "node prettier-test.js | prettier --stdin --parser markdown",
+    "publish:local": "pnpm pack && echo '📦 Package ready for local testing. Use: pnpm install ./ajrly-prettier-config-1.0.0.tgz'",
+    "clean": "rm -f *.tgz",
+    "prepublishOnly": "pnpm test"
+  },
+  "devDependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "4.5.1",
+    "prettier": "3.6.2",
+    "prettier-plugin-tailwindcss": "0.6.14"
+  },
+  "peerDependencies": {
+    "prettier": "^3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nasraldin/ajrly-workspaces.git",
+    "directory": "packages/prettier-config"
+  },
+  "bugs": {
+    "url": "https://github.com/nasraldin/ajrly-workspaces/issues"
+  },
+  "homepage": "https://github.com/nasraldin/ajrly-workspaces/tree/main/packages/prettier-config#readme"
+}

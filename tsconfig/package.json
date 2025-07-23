@@ -1,0 +1,50 @@
+{
+  "name": "@ajrly/tsconfig",
+  "version": "1.0.0",
+  "description": "Professional TypeScript configurations for modern projects with support for monorepos, Next.js, React, Node.js",
+  "keywords": [
+    "typescript",
+    "tsconfig",
+    "typescript-config",
+    "monorepo",
+    "nextjs",
+    "react",
+    "nodejs",
+    "library",
+    "browser",
+    "test"
+  ],
+  "author": "Nasr Aldin <ns@nasraldin.com> (https://nasraldin.com)",
+  "license": "MIT",
+  "files": [
+    "base.json",
+    "jest.json",
+    "lib.json",
+    "monorepo.json",
+    "nextjs.json",
+    "node.json",
+    "react.json",
+    "tsconfig.workspaces.json",
+    "README.md"
+  ],
+  "packageManager": "pnpm@10.13.1",
+  "scripts": {
+    "test": "node tsconfig-test.js",
+    "test:format": "node tsconfig-test.js | prettier --stdin --parser markdown",
+    "publish:local": "pnpm pack && echo '📦 Package ready for local testing. Use: pnpm install ./ajrly-tsconfig-1.0.0.tgz'",
+    "clean": "rm -f *.tgz",
+    "prepublishOnly": "pnpm test"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nasraldin/ajrly-workspaces.git",
+    "directory": "packages/tsconfig"
+  },
+  "bugs": {
+    "url": "https://github.com/nasraldin/ajrly-workspaces/issues"
+  },
+  "homepage": "https://github.com/nasraldin/ajrly-workspaces/tree/main/packages/tsconfig#readme"
+}

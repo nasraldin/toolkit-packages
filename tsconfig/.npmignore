@@ -1,0 +1,38 @@
+# Development files
+.github
+.vscode
+.gitignore
+tsconfig.json
+pnpm-lock.yaml
+
+# Source files (not needed for distribution)
+src/
+tests/
+examples/
+
+# Build artifacts
+dist/
+build/
+*.ts
+*.tsx
+
+# Documentation (keep README.md)
+docs/
+*.md
+!README.md
+
+# Configuration files
+.eslintrc*
+.prettierrc*
+jest.config.*
+vitest.config.*
+
+# Test files (not needed for distribution)
+prettier-test.js
+*.test.js
+*.test.ts
+*.spec.js
+*.spec.ts
+
+# Generated package files
+*.tgz

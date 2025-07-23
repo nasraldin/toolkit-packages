@@ -1,0 +1,68 @@
+{
+  "name": "@ajrly/stylelint-config",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Professional Stylelint configuration for modern CSS/SCSS development with Tailwind CSS support",
+  "keywords": [
+    "stylelint",
+    "stylelint-config",
+    "css",
+    "scss",
+    "sass",
+    "less",
+    "styling",
+    "linting",
+    "tailwindcss",
+    "code-quality"
+  ],
+  "author": "Nasr Aldin <ns@nasraldin.com> (https://nasraldin.com)",
+  "license": "MIT",
+  "main": "index.mjs",
+  "module": "index.mjs",
+  "types": "index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./index.mjs",
+      "require": "./index.cjs",
+      "types": "./index.d.ts"
+    }
+  },
+  "files": [
+    "index.mjs",
+    "index.cjs",
+    "index.d.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "packageManager": "pnpm@10.13.1",
+  "scripts": {
+    "test": "node test.js",
+    "test:lint": "stylelint test/fixtures/**/*.css",
+    "pack": "pnpm pack",
+    "pack:test": "pnpm pack && echo '📦 Package ready for local testing. Use: pnpm install ./ajrly-stylelint-config-1.0.0.tgz'",
+    "publish:local": "pnpm test && pnpm pack && echo '📦 Package ready for local testing. Use: pnpm install ./ajrly-stylelint-config-1.0.0.tgz'",
+    "clean": "rm -f *.tgz",
+    "prepublishOnly": "pnpm test"
+  },
+  "devDependencies": {
+    "stylelint": "^16.0.0",
+    "stylelint-config-standard": "^36.0.0",
+    "stylelint-config-tailwindcss": "^0.0.7",
+    "stylelint-order": "^6.0.4"
+  },
+  "peerDependencies": {
+    "stylelint": "^14.0.0 || ^15.0.0 || ^16.0.0",
+    "stylelint-config-standard": "^36.0.0",
+    "stylelint-config-tailwindcss": "^0.0.7",
+    "stylelint-order": "^6.0.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nasraldin/ajrly-workspaces.git",
+    "directory": "packages/stylelint"
+  },
+  "bugs": {
+    "url": "https://github.com/nasraldin/ajrly-workspaces/issues"
+  },
+  "homepage": "https://github.com/nasraldin/ajrly-workspaces/tree/main/packages/stylelint#readme"
+}

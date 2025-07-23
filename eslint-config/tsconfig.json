@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "ES2024",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "lib": ["DOM", "ESNext"],
+    "rootDir": ".",
+    "strict": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "declaration": true,
+    "declarationMap": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "noEmitOnError": true
+  },
+  "include": ["**/*.ts", "**/*.js", "**/*.mjs", "**/*.cjs"],
+  "exclude": ["node_modules", "dist", "*.tgz", "*.tsbuildinfo"]
+}
